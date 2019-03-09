@@ -1,0 +1,216 @@
+/* @import url('https://fonts.googleapis.com/css?family=Noto+Serif'); */
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+@import url('https://fonts.googleapis.com/css?family=PT+Serif');
+
+body {
+  color: #000;
+  /* font-family: 'Times New Roman', Times, serif; */
+  /* font-family: 'Noto Serif', serif; */
+  font-family: 'PT Serif', serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+pre,
+code {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 1.25rem;
+  line-height: 1.6;
+}
+
+/* ****************
+ */
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+ol, p, ul {
+  margin: 1rem 0;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0;
+}
+
+h1, h2, h3, h4, h5 {
+  margin: 2rem 0;
+  color: #333;
+  letter-spacing: 1px;
+}
+
+h1, h2, h3 {
+  text-align: center; 
+}
+
+/* ****************
+ */
+
+html {
+  font-size: 100%;
+  -webkit-overflow-scrolling: touch;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background-color: #EADCCF;
+  margin: 0;
+  text-rendering: optimizeLegibility;
+  min-width: 768px;
+}
+
+nav {
+  min-width: 768px;
+  text-align: right;
+  background-color: rgba(0,0,0,0.6);
+  position: absolute;
+  width: 100%;
+  height: 220px;
+  padding-top: 0.5rem;
+  top: 0;
+}
+
+nav a {
+  display: inline-block;
+  margin-right: 1rem;
+  font-size: 0.75rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: 1px;
+  font-weight: 400;
+}
+
+nav a:link, nav a:visited {
+  color: #EADCCF;
+}
+
+body.layout-photos h2 {
+  position: relative;
+  z-index: 2;
+  margin: 3rem 0 1rem;
+  color: #EADCCF;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+body.layout-page h2 {
+  margin: 3rem 0;
+  text-align: left;
+  font-size: 1.5rem;
+}
+
+.paper {
+  background-color: #fff;
+  max-width: 900px;
+  margin: 3rem auto 0;
+  border-radius: 4px;
+  box-shadow: 0 0 100px rgba(0,0,0,0.1);
+  padding-bottom: 2rem;
+  position: relative;
+  z-index: 2;
+}
+
+a,
+a:link {
+  text-decoration: none;
+  color: #1d8bb0;
+}
+
+a:visited {
+  text-decoration: none;
+  color: #988148;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+li {
+  padding-left: 2rem;
+  margin-left: 0;
+  margin-bottom: 1rem;
+  position: relative;
+  list-style-type: none;
+}
+
+ul.poems li:before {
+  position: absolute;
+  content: "✑";
+  color: #CEC3B7;
+  font-size: 1.2rem;
+  left: 0;
+}
+
+h1.site-title {
+  text-align: center;
+  font-size: 3rem;
+  line-height: 1.2;
+  margin: 0;
+  padding: 2rem 3rem 0;
+}
+
+h1.site-title span {
+  font-size: 0.5em;
+  text-transform: uppercase;
+}
+
+article {
+  padding: 1rem;
+  position: relative;
+  z-index: 2;
+}
+
+@media screen and (min-device-width: 768px) {
+  article { padding: 1rem 3rem; }
+  .paper {
+    width: 90%;
+    margin-bottom: 1rem;
+  }
+ }
+
+article img.intext {
+  width: 300px;
+  float: left;
+  margin: 0.5rem 1.5rem 0.5rem 0;
+}
+
+.photos {
+  text-align: center;
+}
+
+.photos img {
+  display: inline-block;
+  /* height: 16rem; */
+  /* height: 30vh; */
+  /* min-height: 300px; */
+  /* max-width: 300px; */
+  /* height: 225px; */
+  width: 51%;
+  border: 10px solid #fff;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  margin: 0.5rem;
+}
+
+footer {
+  padding: 1rem 0 3rem;
+  text-align: center;
+  font-size: 0.85rem;
+}
+
+/* body.layout-main nav .home,
+body.layout-photos nav .photos {
+  display: none;
+} */
